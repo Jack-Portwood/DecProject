@@ -1,14 +1,21 @@
 import React from "react";
-import ListItem from "./ListItem";
 
-const ListComponent = () => {
+const ListComponent = (props) => {
+
+
+    // const classMates = props.map(student => {
+    //   return( <p>{student.name}</p> )
+    // })
+  // const classMates = props.g17.map((student) => {
+  //   return( <p>{student.name}</p>)
+  // })
   return (
     <div>
-      <h2>Hello from ListComponent</h2>
+<h1>Hello</h1>
 
-      <ListItem />
     </div>
   );
 };
 
 export default ListComponent;
+
