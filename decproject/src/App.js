@@ -3,8 +3,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello from App</h1>
-       
+        <h1>Goodbye from the App</h1>
+
       </header>
     </div>
   );
