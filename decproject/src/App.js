@@ -1,4 +1,4 @@
-
+import sass from "./index.scss"
 function App() {
   return (
     <div className="App">
