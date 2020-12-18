@@ -10,9 +10,10 @@ const ListComponent = ({g17}) => {
 
   
   return (
-    <div>
-      <ul>{classMates}</ul>
-    </div>
+    
+      <div className="g17-list">
+        {classMates}
+      </div>
   );
 };
 
