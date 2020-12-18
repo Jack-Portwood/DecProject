@@ -13,7 +13,7 @@ const [g17, setG17] = useState([])
  };
 
 useEffect(() => {
-  setG17(fetchFromDB("http://localhost:4000/api/g17"))
+  (fetchFromDB("http://localhost:4000/api/g17"))
 }, []);
 
   return (
