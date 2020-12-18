@@ -1,18 +1,17 @@
 import React from "react";
+import ListItem from "./ListItem"
 
 const ListComponent = ({g17}) => {
 
 
   const classMates = g17.map((student, key ) => {
-  return( <p>{student.name}</p>)
-  })
+  return( <ListItem student={student} />)
+})
 
   
   return (
     <div>
-<h1>Hello</h1>
-{classMates}
-
+      <ul>{classMates}</ul>
     </div>
   );
 };

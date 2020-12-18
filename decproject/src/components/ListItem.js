@@ -1,11 +1,12 @@
 import React from "react";
 import Modal from "./Modal";
 
-const ListItem = () => {
+const ListItem = ({ student }) => {
   return (
-  
-
-      <Modal />
+    <li className = "student-container">
+      <img className = "student-image-container" src={student.img} />
+      <p className = "student-name-container">{student.name}</p>
+    </li>
   );
 };
 

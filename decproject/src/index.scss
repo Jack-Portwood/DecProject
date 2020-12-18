@@ -1,3 +1,35 @@
-h1{
-  color: red;
+
+main-container{
+  width: 80vw;
+  height: 80vh;
+  border: 1px solid blue;
 }
+
+ul{
+  display: inline-flex;
+  width: 80vw;
+
+  
+}
+
+li{
+  
+  border: solid 1px red;
+  margin: 1vh;
+  list-style: none;
+  width: 12vw;
+  height: 12vh;
+
+
+
+  img{
+  width: 10vw;
+  height: 10vh;
+}
+
+}
+
+
+//rem inherits from the html root 
+
+//em inherits from its perant 

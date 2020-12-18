@@ -17,12 +17,11 @@ useEffect(() => {
 }, []);
 
   return (
-    <div>
-      <h1>Hello From MainContainer</h1>
+    <div className="main-container">
 
       <ListComponent g17 ={g17} />
     </div>
-  );
+  )
 };
 
 export default MainContainer;
