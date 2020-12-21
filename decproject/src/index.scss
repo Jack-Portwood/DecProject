@@ -16,34 +16,47 @@
   height: 90vh;
   border: 1px solid green;
   overflow: scroll;
-  perspective:500px;
+}
 
+//////////////////////////////////////////////////
+
+
+.outer-student-container{
+  width: 9em;
+  height: 9em;
+  perspective: 1000px;
+}
+
+.outer-student-container:hover .student-container{
+  transform: rotateY(180deg);
 }
 
 .student-container{
   position: relative;
   display: inline-flex;
-  // border: solid 1px red;
   margin: 1em;
   width: 9em;
   height: 9em;
+   transition: transform 1s;
+   transform-style: preserve-3d;
 
-  .student-image{
-  width: 9em;
-  height: 9em;
-  position: absolute;
+  .back{
+    width: 9em;
+    height: 9em;
+    position: absolute;
+    margin:1px;
+  transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
    backface-visibility: hidden;
-
-}
-  .back{
-  border:3px solid gold;
-  transform: rotateY(180deg);
 }
 
   .front{
-    border:3px solid purple;
-    // transform: rotateY(180deg);
+    width: 9em;
+    height: 9em;
+    position: absolute;
+    margin:1px;
+    -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
 
   }
 

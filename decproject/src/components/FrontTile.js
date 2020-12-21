@@ -5,8 +5,9 @@ const FrontTile =({student})=>{
 
 
   return(
-    <img className = "student-image front" src={student.img} />
+    <h1>Front</h1>
   )
 }
 
 export default FrontTile;
+  // <img className = "front" src={student.img} />

@@ -4,8 +4,12 @@ const BackTile =({student})=>{
 
 
   return(
-    <img className = "student-image back" src={student.img} />
+    <h1>BACK</h1>
+    
   )
 }
 
 export default BackTile;
+
+
+// <img className = "back" src={student.img} />
