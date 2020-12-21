@@ -5,7 +5,7 @@ const FrontTile =({student})=>{
 
 
   return(
-    <h1>Front</h1>
+    <h1 className="front">Front</h1>
   )
 }
 

@@ -4,8 +4,8 @@ const BackTile =({student})=>{
 
 
   return(
-    <h1>BACK</h1>
-    
+    <h1 className="back">BACK</h1>
+
   )
 }
 
