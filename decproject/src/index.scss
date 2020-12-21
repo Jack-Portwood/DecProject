@@ -16,27 +16,44 @@
   height: 90vh;
   border: 1px solid green;
   overflow: scroll;
+  perspective:500px;
 
 }
 
 .student-container{
+  position: relative;
   display: inline-flex;
-  border: solid 1px red;
+  // border: solid 1px red;
   margin: 1em;
   width: 9em;
   height: 9em;
-  
 
-
-
-  .student-image-container{
+  .student-image{
   width: 9em;
   height: 9em;
-}
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
 
 }
+  .back{
+  border:3px solid gold;
+  transform: rotateY(180deg);
+}
+
+  .front{
+    border:3px solid purple;
+    // transform: rotateY(180deg);
+
+  }
 
 
-//rem inherits from the html root 
+}
 
-//em inherits from its perant 
+
+
+
+
+//rem inherits from the html root
+
+//em inherits from its perant

@@ -15,7 +15,7 @@ const createRouter = (data) => {
   });
 
   router.get("/:id", (req, res) => {
-      const id = req.params.id 
+      const id = req.params.id
       data.findOne({_id: ObjectID(id)})
       .then((doc) => res.json(doc))
       .catch((err) => {
@@ -52,7 +52,7 @@ const createRouter = (data) => {
   })
 
   router.put("/:id", (req, res) => {
-      const id = req.params.id 
+      const id = req.params.id
       const updatedData = req.body
       data.findOneAndUpdate({_id: ObjectID(id)}, {$set: updatedData}, {returnOriginal: false})
       .then(result => {
